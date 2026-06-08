@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card Example</title>
+    <!-- เชื่อมต่อไฟล์ CSS หรือวางใน tag style -->
+    <style>
+        /* Element Selector */
+        body {
+            background-color: #f4f6f9;
+            font-family: Tahoma, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Class Selector */
+        .card {
+            width: 400px; /* ปรับลดขนาดลงเล็กน้อยเพื่อให้พอดีกับหน้าจอทั่วไป */
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            border: 2px solid #0d6efd;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        /* Hover Effect */
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+            cursor: pointer;
+        }
+
+        /* ID Selector */
+        #profile {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #0d6efd;
+            object-fit: cover; /* ป้องกันภาพเบี้ยว */
+            margin-bottom: 15px;
+        }
+
+        /* Element Selector */
+        h1 {
+            color: #0d6efd;
+            margin: 10px 0;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- รูปภาพโปรไฟล์ (ใช้ ID ตาม CSS) -->
+        <img src="ing/S__60260358.jpg" id="profile" alt="User Profile">
+        
+        <!-- หัวข้อ (ใช้ Element Selector h1) -->
+        
+        <!-- ข้อความ (ใช้ Element Selector p) -->
+        <p>Full Stack Developer</p>
+        <p>ยินดีต้อนรับเข้าสู่โปรไฟล์ของฉัน ผมมีความเชี่ยวชาญด้านการเขียน CSS และการออกแบบ UI/UX ที่เรียบง่ายแต่ทรงพลัง</p>
+    </div>
+
+</body>
+</html>
